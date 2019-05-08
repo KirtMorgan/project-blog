@@ -5,14 +5,14 @@
     <title>Contacts</title>
 
 
-    <div
-            style="text-align:center">
+    <div class="header" style="text-align:center">
         <h1>Contact Us</h1>
+
         <p>Here's how to contact us:</p>
 
   </div>
 
-    <div>
+    <div class="column">
 
         <label for="fstname">First Name</label>
         <input type="text" id="fstname" name="firstname" placeholder="what's your name..?">
@@ -23,32 +23,66 @@
     </div>
 
 
-    <div>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="write your message here..." style="height:170px"></textarea>
+    <div class="subject1">
+
+        <textarea placeholder="write your message here..." style="height:160px"></textarea>
 
 
 
     </div>
 
 
-
-
-
+    <div>
        <style>
 
-        body {background-color: powderblue;}
+            body {background-color: powderblue;}
 
-        input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+            input[type=text], select, textarea {
+            width: 30%;
+            padding: 12px;
+            border: 1px solid;
+
+            margin-top: 26px;
+            margin-bottom: 16px;
+            resize: vertical; }
+
+
+            .column {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  padding: 20px;
+
 }
 
-    </style>
+            .subject1 {
+  float: left;
+  width: 133%;
+  margin-top: 10px;
+  margin-left: 90px;
+
+}
+
+
+
+
+        </style>
+
+    </div>
+
+    <div>
+        <style>
+
+            .header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+         </style>
+
+    </div>
+
 </head>
 <body>
 
