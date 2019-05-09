@@ -1,9 +1,5 @@
-<!DOCTYPE html>
 {% extends 'layout.html'%}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
+{% block body %}
     <style>
         body {background-color: powderblue;}
         h1 {text-align: center;}
@@ -23,9 +19,6 @@
                  display: table;
                 }
     </style>
-</head>
-<body>
-{% block body %}
     <div>
         <h1>The Food Mood Blog</h1>
         <div class="food row">
@@ -50,5 +43,3 @@
     </div>
     </div>
 {% endblock %}
-</body>
-</html>
