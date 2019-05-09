@@ -16,7 +16,7 @@ def articles():
             'id': 3,
             'author': 'Yousuf Ali',
             'title': 'Between the Buns',
-            'content': ''
+            'content': 'Yousuf '
         }
     ]
     return articles_data
