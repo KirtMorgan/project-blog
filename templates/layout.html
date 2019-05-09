@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Food Mood Blog</title>
+        <!--other sources and trackers that we will need in every page-->
+        <!--example is linking our css or adding a google tracker-->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+
+
+    <body>
+        <!--Add a nav bar-->
+        <!--add footer-->
+        <!--we want to render our pages-->
+        {% block body %}
+        {% endblock %}
+    </body>
+
+</html>
