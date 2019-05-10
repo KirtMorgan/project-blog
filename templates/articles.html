@@ -2,5 +2,20 @@
 
 {% block body %}
 
+    <div>
+        <h2>Here is the blog page for {{article.title}}</h2>
+        <h4>Written by Chef{{article.chef}}</h4>
 
-    <h3></h3>
+    </div>
+
+
+    <div>
+        <p>{{article.content}}</p>
+    </div>
+
+    <div>
+        <!-- there will be a picture here -->
+
+    </div>
+
+{% endblock %}
