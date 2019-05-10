@@ -25,10 +25,6 @@ def contacts():
 def articles():
     return render_template('articles.html')
 
-@app.route('/articles')
-def articles():
-    return render_template('articles.html', articles_data_db = articles_with_data)
-
 def show_article(dict_id):
     if int(dict_id) > len(articles):
         return 'article doesnt exist'
