@@ -20,7 +20,7 @@ def contacts():
     return render_template('contacts.html')
 
 
-@app.route('/blog')
+@app.route('/articles')
 def articles():
     return render_template('articles.html', articles_data_db = articles_with_data)
 
