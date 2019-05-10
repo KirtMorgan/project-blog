@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from article_chef_select import chef_pick
+from articles import chef_pick
 
 app = Flask(__name__)
 
