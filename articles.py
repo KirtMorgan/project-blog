@@ -1,5 +1,5 @@
-def chef_pick():
-    chefs = [
+def articles():
+    articles = [
         {
             'id': 1,
             'image': '',
@@ -22,4 +22,4 @@ def chef_pick():
             'content': ''
         }
     ]
-    return chefs
+    return articles
