@@ -1,5 +1,7 @@
 from flask import Flask, render_template
+
 from articles import articles
+
 
 # app is the instance of the Flask object that has a method
 app = Flask(__name__)
@@ -19,6 +21,9 @@ def home():
 def contacts():
     return render_template('contacts.html')
 
+@app.route('/articles')
+def articles():
+    return render_template('articles.html')
 
 @app.route('/articles')
 def articles():
