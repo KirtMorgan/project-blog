@@ -1,3 +1,4 @@
+
 body {}
 
 .simple-card{
@@ -7,3 +8,14 @@ body {}
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+.homepage {
+    height: 400px;
+    width: 1535px;
+    background-image: url('http://www.danadorobantu.com/images/cocktail-2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
