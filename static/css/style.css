@@ -1,13 +1,13 @@
-
-body {}
-
 .simple-card{
     height: 300px;
-    background-image: url("https://source.unsplash.com/random");
+    /*background-image: {{article.image}};*/
+    /*url("https://source.unsplash.com/random");*/
+    color: blue;
     background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
 .homepage {
     height: 400px;

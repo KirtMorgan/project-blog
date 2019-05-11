@@ -1,16 +1,16 @@
 {% extends 'layout.html'%}
 
 {% block body %}
-<h1>hello</h1>
 <div class="row">
     {% for article in articles %}
-    <div class="col-12" >
-        <div class="simple-card" style="background image: url('https://source.unsplash.com/random')">
-            <a class='btn btn-success' href="articles/{{article.id}}">See more</a>
-            <h2>Hello</h2>
-            <h3>Enter article info here</h3>
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="simple-card" style="background-image: url('{{article.image}}')">
+                <h3 class="card-title">By {{article.chef}}</h3>
+                <h2>{{article.title}}</h2>
+                <a class='btn btn-success' href="articles/{{article.id}}">See more</a>
+            </div>
         </div>
-
     </div>
 </div>
 {% endfor%}
