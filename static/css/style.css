@@ -1,9 +1,10 @@
-.simple-card{
-    height: 300px;
+.article-card{
+    height: 500px;
+    /*width: 500px;*/
     /*background-image: {{article.image}};*/
     /*url("https://source.unsplash.com/random");*/
     color: blue;
-    background-size: cover;
+    /*background-size: cover;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,4 +19,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.blockquote-footer {
+    color: red;
+
+    }
 
