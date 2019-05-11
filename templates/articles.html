@@ -1,19 +1,23 @@
 {% extends 'layout.html'%}
 
 {% block body %}
+
+
 <div class="row">
     {% for article in articles %}
     <div class="container">
         <div class="col-lg-12">
+
             <div class="simple-card" style="background-image: url('{{article.image}}')">
                 <h3 class="card-title">By {{article.chef}}</h3>
                 <h2>{{article.title}}</h2>
                 <a class='btn btn-success' href="articles/{{article.id}}">See more</a>
             </div>
+
         </div>
     </div>
+    {% endfor%}
 </div>
-{% endfor%}
 
 {% endblock %}
 
