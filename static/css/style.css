@@ -1,15 +1,3 @@
-.article-card{
-    height: 500px;
-    /*width: 500px;*/
-    /*background-image: {{article.image}};*/
-    /*url("https://source.unsplash.com/random");*/
-    color: blue;
-    /*background-size: cover;*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .homepage {
     height: 400px;
     width: 1535px;
@@ -20,8 +8,27 @@
     align-items: center;
 }
 
-.blockquote-footer {
-    color: red;
+.row{
+    display: flex;
+}
 
+.col-12{
+ display: flex;
+}
+.article-card{
+    color: blue;
+    background-size: cover;
+    /*display: flex;*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-wallpaper{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/100/126/large_2x/vector-cooking-stuff-icon-set.jpg');
+    display: flex;
+}
+.blockquote{
+    color: red;
     }
+
 

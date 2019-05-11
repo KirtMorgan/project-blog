@@ -1,26 +1,26 @@
 {% extends 'layout.html'%}
 
 {% block body %}
-
-{% for article in articles %}
-<div class="row">
-    <div class="container">
+<div class="cards-wallpaper">
+    <div class="row">
+        {% for article in articles %}
         <div class="col-12">
-            <div class="article-card">
-                <div class="d-flex flex-column">
-                    <img src="{{article.image}}" class="card-img-top">
-                    <!--            <div class="article-card" style="background-image: url('{{article.image}}')">-->
-                    <h3 class="card-title">{{article.title}}</h3>
-                    <blockquote class="blockquote mb-0">
-                        <footer class="blockquote-footer">By {{article.chef}}</footer>
-                    </blockquote>
-                    <a class='btn btn-success' href="articles/{{article.id}}">Read article</a>
+            <div class="container-fluid">
+                <div class="article-card">
+                    <div class="card-column" ></div>
+                    <div class="card text-white bg-warning">
+                        <img src="{{article.image}}" class="card-img-top">
+                        <h3 class="card-title">{{article.title}}</h3>
+                        <blockquote class="blockquote">
+                            <footer class="blockquote-footer">By {{article.chef}}</footer>
+                        </blockquote>
+                        <a class='btn btn-success' href="articles/{{article.id}}">Read article</a>
+                    </div>
                 </div>
             </div>
         </div>
+        {% endfor%}
     </div>
 </div>
-{% endfor%}
-
 {% endblock %}
 
