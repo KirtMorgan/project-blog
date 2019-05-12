@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+
+
+<div class="container">
+    <div class="banner-outline">
+        <div class="banner-content">
+            <img src="{{article.image}}" alt="" style="width:500px;">
+
+            <h2>Here is the blog page for: {{article.title}}</h2>
+            <h5>Written by {{article.chef}}</h5>
+        </div>
+    </div>
+
+    <div>
+        <p class="content"> {{article.content}}</p>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+

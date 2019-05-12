@@ -23,19 +23,20 @@ def contacts():
 
 @app.route('/articles')
 def articles():
-    return render_template('articles.html')
+    return render_template('articles.html', articles_data = articles_with_data)
 
-def show_article(dict_id):
-    if int(dict_id) > len(articles):
-        return 'article doesnt exist'
-    else:
-        article = articles[int(dict_id)]
-        return article
-
-@app.route('/articles/<string:id>')
+@app.route('/articles/<string:dict_id>')
 def show_article_page(dict_id):
     result = show_article(dict_id)
-    return render_template('display_article_page.html', dict_id=dict_id, article=result)
+    return render_template('show_an_article_page.html', dict_id=dict_id, article=result)
+
+
+def show_article(dict_id):
+    if int(dict_id) > len(articles_with_data):
+        return 'article doesnt exist'
+    else:
+        article = articles_with_data[int(dict_id)-1]
+        return article
 
 
 if __name__== '__main__':
