@@ -30,7 +30,6 @@ def show_article_page(dict_id):
     result = show_article(dict_id)
     return render_template('show_an_article_page.html', dict_id=dict_id, article=result)
 
-
 def show_article(dict_id):
     if int(dict_id) > len(articles_with_data):
         return 'article doesnt exist'
