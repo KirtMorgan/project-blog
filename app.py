@@ -6,7 +6,7 @@ from articles import articles
 # app is the instance of the Flask object that has a method
 app = Flask(__name__)
 
-# meothod calling the articles db
+# method calling the articles db
 articles_with_data = articles()
 
 @app.route('/story')
@@ -36,7 +36,6 @@ def show_article(dict_id):
     else:
         article = articles_with_data[int(dict_id)-1]
         return article
-
 
 if __name__== '__main__':
     app.run(debug=True)
