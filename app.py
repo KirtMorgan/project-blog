@@ -1,11 +1,13 @@
 from flask import Flask, render_template
 from articles import articles
+from article_sql_real import article_db
 
 # app is the instance of the Flask object that has a method
 app = Flask(__name__)
 
 # meothod calling the articles db
 articles_with_data = articles()
+articles_from_sql = article_db()
 
 @app.route('/story')
 def story():
@@ -35,6 +37,9 @@ def show_article_page(dict_id):
     result = show_article(dict_id)
     return render_template('display_article_page.html', dict_id=dict_id, article=result)
 
-
 if __name__== '__main__':
     app.run(debug=True)
+
+@app.route('/sql-articles')
+def sql_articles():
+    return render_template('articles_sql.html', article_results=articles_from_sql)

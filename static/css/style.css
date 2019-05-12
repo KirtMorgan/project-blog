@@ -12,9 +12,10 @@
     display: flex;
 }
 
-.col-12{
+.col-12 col-md-8 col-sm-4{
  display: flex;
 }
+
 .article-card{
     color: blue;
     background-size: cover;

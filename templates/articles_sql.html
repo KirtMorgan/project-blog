@@ -3,16 +3,16 @@
 {% block body %}
 <div class="cards-wallpaper">
     <div class="row">
-        {% for article in articles %}
+        {% for article in articles_results %}
         <div class="col-12 col-md-8 col-sm-4">
             <div class="container-fluid">
                 <div class="article-card">
                     <div class="card-column"></div>
                     <div class="card text-white bg-warning">
                         <img src="{{article.image}}" class="card-img-top">
-                        <h3 class="card-title">{{article.title}}</h3>
+                        <h3 class="card-title">{{article.Title}}</h3>
                         <blockquote class="blockquote">
-                            <footer class="blockquote-footer">By {{article.chef}}</footer>
+                            <footer class="blockquote-footer">By {{article.Chef}}</footer>
                         </blockquote>
                         <a class='btn btn-success' href="articles/{{article.id}}">Read article</a>
                     </div>
@@ -23,4 +23,3 @@
     </div>
 </div>
 {% endblock %}
-
