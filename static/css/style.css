@@ -19,7 +19,7 @@ body {}
     align-items: center;
 }
 
-.banner-outline {
+.banner-content {
     height: 50px;
     width: 50px;
     background-size: cover;
