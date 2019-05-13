@@ -17,3 +17,13 @@
     align-items: center;
 }
 
+.banner-content {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
